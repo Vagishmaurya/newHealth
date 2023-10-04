@@ -15,4 +15,8 @@ export const NavbarLinks = [
     title: "Book Appointment",
     path: "/contact",
   },
+  {
+    title:"Government Policies",
+    path:"https://vagishmaurya.github.io/govhp/"
+  },
 ];

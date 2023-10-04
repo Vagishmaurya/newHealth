@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import {FaArrowRight} from 'react-icons/fa';
+import {FaArrowRight , FaAmbulance} from 'react-icons/fa';
 import HighlightText from '../components/core/HomePage/HighlightText';
 import CTAButton from '../components/core/HomePage/Button';
 import Banner from '../assets/Images/banner.mp4'
@@ -18,15 +18,16 @@ const Home = () => {
     <div>
      
     {/*Section 1*/}
-    <div className='relative mx-auto flex flex-col items-center w-11/12 max-w-maxContent text-white justify-between'>
+    <div className='relative mx-auto flex flex-col items-center  max-w-maxContent bg-white text-richblack-800 justify-between'>
         
         <Link to={"/signup"}>
-           <div className='group mt-16 p-1 mx-auto rounded-full bg-richblack-800 font-bold text-richblack-200
+           <div className='group mt-16 p-1 mx-auto rounded-full bg-pink-500 font-bold text-white
            transition-all duration-200 hover:scale-95 w-fit'>
               <div className='flex flex-row items-center gap-2 rounded-full px-10 py-[5px] transition-all 
-              duration-200 group-hover:bg-richblack-900'>
-                  <p>Book Appointment</p>
-                  <FaArrowRight/>
+              duration-200 group-hover:bg-pink-600'>
+                  <p>EMERGENCY</p>
+                  {/* <FaArrowRight/> */}
+                  <FaAmbulance/>
               </div>
            </div>
         </Link>
@@ -41,15 +42,15 @@ const Home = () => {
 
         <div className='flex flex-row mt-8 gap-7'>
         <CTAButton active={true} linkto={"/signup"}>
-            Learn More
+            Call Ambulance
         </CTAButton>
 
         <CTAButton active={false} linkto={"/login"}>
-            Book a Demo
+            Urgent Allotment
         </CTAButton>
         </div>
 
-        <div className='mx-3 my-12 shadow-lg'>
+        {/* <div className='mx-3 my-12 shadow-lg'>
             <video
             muted
             loop
@@ -57,9 +58,9 @@ const Home = () => {
             >
             <source src={Banner}/>
             </video>
-        </div>
+        </div> */}
 
-        <div>
+        <div className='m-2'>
             <CodeBlocks 
                 position={"flex flex-col lg:flex-row"}
                 heading={
@@ -89,7 +90,7 @@ const Home = () => {
             />
         </div>
 
-        <div>
+        <div className='m-2'>
             <CodeBlocks 
                 position={"flex flex-col-reverse lg:flex-row-reverse"}
                 heading={
@@ -169,7 +170,7 @@ const Home = () => {
                    </p>
 
                    <CTAButton active={true} linkto={"/signup"}>
-                    Learn More
+                    Learn more
                    </CTAButton>
                 </div>
              </div>

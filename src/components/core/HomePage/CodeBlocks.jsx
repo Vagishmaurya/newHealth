@@ -28,7 +28,7 @@ const CodeBlocks = ({position,heading,subheading,ctabtn1,ctabtn2,codeblock,backg
       </div>
       </div>
 
-      <div className='h-fit flex text-[15px] w-[100%] py-4 lg:w-[500px] relative bg-richblack-800 rounded-md'>
+      <div className='h-fit flex text-[15px] w-[100%] py-4 lg:w-[500px] relative bg-richblue-400 rounded-md'>
       <div className='circle1 h-[70px] w-[70px] rounded-full absolute top-8 right-28 z-0'></div>
       <div className='circle2 h-[70px] w-[70px] rounded-full absolute bottom-7 left-28 z-0'></div>
         <div className='text-center flex flex-col w-[10%] text-richblack-300 font-inter font-bold z-10'>
