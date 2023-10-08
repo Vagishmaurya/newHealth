@@ -33,12 +33,17 @@ const Home = () => {
         </Link>
 
         <div className='font-semibold text-3xl mt-7 text-center'>
-            Treated more than 20 lakh patients across
-            <HighlightText text={" 35 Countries"}/>
+        Connecting you with trusted doctors across 
+            <HighlightText text={" India"}/>
+            {/* . Specially desgined for Himanchal Pradesh */}
         </div>
 
         <div className='mt-4 w-[80%] text-center font-bold text-lg text-richblack-300'>
-        Our medical team in prepared to handle a wide range of medical needs, such as primary care, and specialist consultations. We have the knowledge and experience to meet all of your healthcare needs. </div>
+          Emergency button is for Tackling landslide problems in Himachal Pradesh. An alert notification will be send to 
+          emergency services including Hospital , Ambulance , Police station , e.t.c.
+          Call Ambulance and Urgent Allotment services is for Road accident and serious cases.
+          
+           </div>
 
         <div className='flex flex-row mt-8 gap-7'>
         <CTAButton active={true} linkto={"/signup"}>
@@ -65,12 +70,12 @@ const Home = () => {
                 position={"flex flex-col lg:flex-row"}
                 heading={
                     <div className='text-4xl font-semibold'>
-                        What Sets
-                        <HighlightText text={" HealthVistaHub "}/>
-                        Apart
+                        Specially Designed for
+                        <HighlightText text={" Himanchal Pradesh"}/>
+                        
                     </div>
                 }
-                subheading={"Everything can be found online nowadays, but there are still a few things that are better with a human touch. One of them is your doctor’s appointment. Nothing beats having an in-depth conversation with your doctor in the comfort of your own home. With HealthVistaHub Health, you can schedule a doctor’s visit to your home within the next 60 minutes. With us, you have"}
+                subheading={"Everything can be found online nowadays, but there are still a few things that are better with a human touch. One of them is your doctor’s appointment. Nothing beats having an in-depth conversation with your doctor in the comfort of your own home. With HealthVistaHub, you can schedule a doctor’s appointment within the next 15 minutes."}
                 ctabtn1={
                     {
                         btnText:"Book Appointment",
